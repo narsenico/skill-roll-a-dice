@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "hello world",
+      "invocationName": "roll a dice",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,9 +16,19 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "RollADiceIntent",
+          "slots": [
+            {
+              "name": "ndice",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
           "samples": [
-            "hello"
+            "roll a dice",
+            "roll one dice",
+            "roll a dice {ndice} times",
+            "roll {ndice} times",
+            "roll {ndice} dice"
           ]
         }
       ]

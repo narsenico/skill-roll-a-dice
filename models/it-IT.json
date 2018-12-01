@@ -1,0 +1,48 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "lancia i dadi",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "RollADiceIntent",
+          "slots": [
+            {
+              "name": "ndice",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            },
+            {
+              "name": "nface",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "lancia un dado",
+            "lanciare un dado",
+            "lancia un dado {ndice} volte",
+            "lanciare un dado {ndice} volte",
+            "lancia {ndice} dadi",
+            "lanciare {ndice} dadi",
+            "lancia un dado da {nface}",
+            "lanciare un dado da {nface}",
+            "lancia {ndice} dadi da {nface}",
+            "lanciare {ndice} dadi da {nface}",
+            "lancia {ndice} di {nface}",
+            "lanciare {ndice} di {nface}"
+          ]
+        }
+      ]
+    }
+  }
+}

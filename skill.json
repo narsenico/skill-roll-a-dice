@@ -2,27 +2,38 @@
   "manifest": {
     "publishingInformation": {
       "locales": {
-        "en-US": {
-          "summary": "Sample Short Description",
+        "it-IT": {
+          "summary": "Skill per lanciare i dadi",
           "examplePhrases": [
-            "Alexa open hello world",
-            "hello",
-            "help"
+            "Alexa chiedi a lancia di dadi di lanciare un dado da 12",
+            "Alexa chiedi a lancia di dadi di lanciare 3 dadi da 20",
+            "Alexa chiedi a lancia di dadi di lanciare 4d10"
           ],
-          "name": "Hello World",
-          "description": "Sample Full Description"
+          "name": "Lancia i dadi",
+          "description": "Stai giocando a D&D ma ti mancano i dadi da 20? Nessun problema, con questa skill puoi lanciare fino a un massimo di 10 dadi da 2 a 100 facce.",
+          "keywords": ["dadi", "gioco di ruolo"],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/amonshore-icons/rolladiceicon_108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/amonshore-icons/rolladiceicon_512.png"
         }
       },
-      "isAvailableWorldwide": true,
+      "isAvailableWorldwide": false,
       "testingInstructions": "Sample Testing Instructions.",
-      "category": "KNOWLEDGE_AND_TRIVIA",
-      "distributionCountries": []
+      "category": "GAMES",
+      "distributionCountries": ["IT"]
     },
     "apis": {
       "custom": {
         "endpoint": {
           "sourceDir": "lambda/custom",
-          "uri": "ask-custom-helloworld-default"
+          "uri": "ask-custom-skill-roll-a-dice-default"
+        },
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "sourceDir": "lambda/custom",
+              "uri": "ask-custom-skill-roll-a-dice-default"
+            }
+          }
         }
       }
     },

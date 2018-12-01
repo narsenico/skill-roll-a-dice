@@ -1,9 +1,48 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "",
+      "skill_id": "amzn1.ask.skill.3c53a74d-97c4-473e-a3b1-d7f9e21079d9",
       "was_cloned": false,
-      "merge": {}
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "bcdd6e3c5fa354918690513327a86f00"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "a1632dfa023f2946f0abadc64043c273"
+          },
+          "it-IT": {
+            "eTag": "9c71107329d4aefe2f38dd615994d540"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:523687437379:function:ask-custom-skill-roll-a-dice-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-skill-roll-a-dice-default",
+            "handler": "index.handler",
+            "revisionId": "e37ad72e-e508-44c6-9fa1-11be65a89137",
+            "runtime": "nodejs8.10"
+          },
+          {
+            "alexaUsage": [
+              "custom/EU"
+            ],
+            "arn": "arn:aws:lambda:eu-west-1:523687437379:function:ask-custom-skill-roll-a-dice-default",
+            "awsRegion": "eu-west-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-skill-roll-a-dice-default",
+            "handler": "index.handler",
+            "revisionId": "594ef071-4825-4981-8217-c521f9a83138",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
     }
   }
 }
