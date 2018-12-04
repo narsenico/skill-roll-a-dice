@@ -1,0 +1,3 @@
+RollADiceIntent ndice=5
+RollADiceIntent nface=6
+RollADiceIntent nface=4 ndice=3
